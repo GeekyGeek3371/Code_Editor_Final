@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+}
+.top-pane{
+    background-color: hsl(225,6%,25%);;
+}
+.pane{
+    height: 60vh;
+    display: flex;
+}
+
+.editor-container {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color: hsl(225,6%,25%);
+    cursor: text;
+}
+
+.editor-container.collapsed{
+    flex-grow: 0;
+}
+.editor-container.expand{
+    flex-grow: 4;
+}
+.editor-container.collapsed .CodeMirror-scroll{
+    position: absolute;
+}
+.editor-title{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(225,6%,13%);
+    color: white;
+    padding: 0.5rem .5rem .5rem 1rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+.CodeMirror{
+    height: 100% !important;
+}
+.code-mirror-wrapper{
+    flex-grow: 1;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    overflow: hidden;
+}
+.fileExplor{
+    flex-grow: 0.3;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color: hsl(225,6%,13%);
+    border-right-color: black;
+    border-width: 3px;
+    font-size: large;
+    color: rgb(107, 109, 116) ;
+
+    
+}
+.fileExplor ul{
+    list-style-type:none;
+}
+.fileExplor ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+.html{
+    color: white;
+}
+.css{
+    color: white;
+}
+.js{
+    color: white;
+}
